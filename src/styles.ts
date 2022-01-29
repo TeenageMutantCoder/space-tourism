@@ -1,45 +1,62 @@
-export default {
-  colors: {
-    dark: "#0B0D17",
-    lightBlue: "#D0D6F9",
-    white: "#FFFFFF",
-  },
-  heading1: {
-    font: "Bellefair",
-    fontSize: "150px",
-  },
-  heading2: {
-    font: "Bellefair",
-    fontSize: "100px",
-  },
-  heading3: {
-    font: "Bellefair",
-    fontSize: "56px",
-  },
-  heading4: {
-    font: "Bellefair",
-    fontSize: "32px",
-  },
-  heading5: {
-    font: "Barlow Condensed",
-    fontSize: "28px",
-    characterSpace: 4.75,
-  },
-  subheading1: {
-    font: "Bellefair",
-    fontSize: "28px",
-  },
-  subheading2: {
-    font: "Barlow Condensed",
-    fontSize: "14px",
-    characterSpace: 2.35,
-  },
-  navText: {
-    font: "Barlow Condensed",
-    fontSize: "16px",
-    characterSpace: 2.7,
-  },
-  bodyText: {
-    font: "Barlow",
-  },
+export const colors = {
+  dark: "#0B0D17",
+  lightBlue: "#D0D6F9",
+  white: "#FFFFFF",
+};
+
+export const heading1 = {
+  color: colors.white,
+  font: "Bellefair, serif",
+  fontSize: "150px",
+};
+
+export const heading2 = {
+  color: colors.white,
+  font: "Bellefair, serif",
+  fontSize: "100px",
+};
+
+export const heading3 = {
+  color: colors.white,
+  font: "Bellefair, serif",
+  fontSize: "56px",
+};
+
+export const heading4 = {
+  color: colors.white,
+  font: "Bellefair, serif",
+  fontSize: "32px",
+};
+
+export const heading5 = {
+  characterSpace: "4.75px",
+  color: colors.lightBlue,
+  font: "Barlow Condensed, sans-serif",
+  fontSize: "28px",
+};
+
+export const subheading1 = {
+  characterSpace: "normal",
+  color: colors.white,
+  font: "Bellefair, serif",
+  fontSize: "28px",
+};
+
+export const subheading2 = {
+  characterSpace: "2.35px",
+  color: colors.white,
+  font: "Barlow Condensed, sans-serif",
+  fontSize: "14px",
+};
+
+export const navText = {
+  characterSpace: "2.7px",
+  color: colors.white,
+  font: "Barlow Condensed, sans-serif",
+  fontSize: "16px",
+};
+
+export const bodyText = {
+  color: colors.lightBlue,
+  font: "Barlow, sans-serif",
 };
