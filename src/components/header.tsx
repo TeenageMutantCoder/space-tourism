@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled, { createGlobalStyle, keyframes } from "styled-components";
+import styled from "styled-components";
 
 import Hamburger from "./hamburger";
 import * as styles from "../styles";
 
 import logoSvg from "../images/shared/logo.svg";
-import hamburgerSvg from "../images/shared/icon-hamburger.svg";
-import closeSvg from "../images/shared/icon-close.svg";
 
 const StyledHeader = styled.header`
   align-items: center;
@@ -31,7 +29,7 @@ const StyledHeader = styled.header`
 `;
 
 const Nav = styled.nav`
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.55px);
   bottom: 0;
   display: flex;
@@ -129,7 +127,7 @@ const Spacer = styled.span`
   flex: 1;
   height: 1px;
   left: 2em;
-  opacity: 0.3;
+  opacity: 0.2515;
   position: relative;
   z-index: 100000;
 
