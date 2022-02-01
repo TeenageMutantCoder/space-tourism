@@ -77,9 +77,20 @@ const StyledLink = styled(Link)`
   @media (min-width: 768px) {
     margin-bottom: 0;
     padding: 32px 0;
+    letter-spacing: 2.36px;
+  }
 
-    b {
+  @media (min-width: 1024px) {
+    letter-spacing: ${styles.navText.characterSpace};
+  }
+
+  b {
+    @media (min-width: 768px) {
       display: none;
+    }
+
+    ::after {
+      content: " ";
     }
   }
 
@@ -146,16 +157,16 @@ function Header() {
       <Spacer />
       <Nav>
         <StyledLink to="/" activeClassName="active">
-          <b>00 </b>Home
+          <b>00</b>Home
         </StyledLink>
         <StyledLink to="/destination/moon" activeClassName="active">
-          <b>01 </b>Destination
+          <b>01</b>Destination
         </StyledLink>
         <StyledLink to="/crew/commander" activeClassName="active">
-          <b>02 </b>Crew
+          <b>02</b>Crew
         </StyledLink>
         <StyledLink to="/technology/launch-vehicle" activeClassName="active">
-          <b>03 </b>Technology
+          <b>03</b>Technology
         </StyledLink>
       </Nav>
     </StyledHeader>
