@@ -15,8 +15,6 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   padding-left: 24px;
   padding-right: 24px;
-  position: sticky;
-  top: 0;
 
   @media (min-width: 768px) {
     padding-left: 39px;
