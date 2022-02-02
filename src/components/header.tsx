@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 import Hamburger from "./hamburger";
+import NavText from "./nav-text";
 import * as styles from "../styles";
 
 import logoSvg from "../images/shared/logo.svg";
@@ -64,58 +65,6 @@ const Nav = styled.nav`
   }
 `;
 
-const StyledLink = styled(Link)`
-  font-family: ${styles.navText.font};
-  font-size: ${styles.navText.fontSize};
-  letter-spacing: ${styles.navText.characterSpace};
-  line-height: 1.5em;
-  margin-bottom: 32px;
-  opacity: 1;
-  padding-left: 32px;
-  position: relative;
-
-  @media (min-width: 768px) {
-    margin-bottom: 0;
-    padding: 32px 0;
-    letter-spacing: 2.36px;
-  }
-
-  @media (min-width: 1024px) {
-    letter-spacing: ${styles.navText.characterSpace};
-  }
-
-  b {
-    @media (min-width: 768px) {
-      display: none;
-    }
-
-    ::after {
-      content: " ";
-    }
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &.active::before {
-    background-color: ${styles.colors.white};
-    content: "";
-    display: block;
-    height: 1.5em;
-    position: absolute;
-    right: 0;
-    width: 4px;
-
-    @media (min-width: 768px) {
-      width: 100%;
-      height: 3px;
-      right: initial;
-      bottom: 0;
-    }
-  }
-`;
-
 const Logo = styled.img`
   height: 100%;
   width: 100%;
@@ -156,18 +105,18 @@ function Header() {
       <Hamburger />
       <Spacer />
       <Nav>
-        <StyledLink to="/" activeClassName="active">
+        <NavText to="/">
           <b>00</b>Home
-        </StyledLink>
-        <StyledLink to="/destination/moon" activeClassName="active">
+        </NavText>
+        <NavText to="/destination/moon">
           <b>01</b>Destination
-        </StyledLink>
-        <StyledLink to="/crew/commander" activeClassName="active">
+        </NavText>
+        <NavText to="/crew/commander">
           <b>02</b>Crew
-        </StyledLink>
-        <StyledLink to="/technology/launch-vehicle" activeClassName="active">
+        </NavText>
+        <NavText to="/technology/launch-vehicle">
           <b>03</b>Technology
-        </StyledLink>
+        </NavText>
       </Nav>
     </StyledHeader>
   );
