@@ -1,7 +1,13 @@
 import React from "react";
 
+import Technology from "../../components/technology";
+
 function Spaceport() {
-  return <div></div>;
+  return (
+    <main>
+      <Technology></Technology>
+    </main>
+  );
 }
 
 export default Spaceport;

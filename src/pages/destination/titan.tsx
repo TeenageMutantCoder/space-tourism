@@ -1,7 +1,13 @@
 import React from "react";
 
+import Destination from "../../components/destination";
+
 function Titan() {
-  return <div></div>;
+  return (
+    <main>
+      <Destination></Destination>
+    </main>
+  );
 }
 
 export default Titan;

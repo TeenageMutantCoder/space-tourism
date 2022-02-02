@@ -1,7 +1,13 @@
 import React from "react";
 
+import Crew from "../../components/crew";
+
 function Pilot() {
-  return <div></div>;
+  return (
+    <main>
+      <Crew></Crew>
+    </main>
+  );
 }
 
 export default Pilot;
