@@ -6,57 +6,180 @@ export const colors = {
 
 export const heading1 = {
   color: colors.white,
-  font: "Bellefair, serif",
-  fontSize: "150px",
+  fontFamily: "Bellefair, serif",
+  fontSize: {
+    mobile: "80px",
+    tablet: "150px",
+    desktop: "150px",
+  },
+  letterSpacing: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
+  lineHeight: {
+    mobile: "100px",
+    tablet: "150px",
+    desktop: "normal",
+  },
 };
 
 export const heading2 = {
   color: colors.white,
-  font: "Bellefair, serif",
-  fontSize: "100px",
+  fontFamily: "Bellefair, serif",
+  fontSize: {
+    mobile: "1rem",
+    tablet: "1rem",
+    desktop: "1rem",
+  },
+  letterSpacing: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
+  lineHeight: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
 };
 
 export const heading3 = {
   color: colors.white,
-  font: "Bellefair, serif",
-  fontSize: "56px",
+  fontFamily: "Bellefair, serif",
+  fontSize: {
+    mobile: "1rem",
+    tablet: "1rem",
+    desktop: "1rem",
+  },
+  letterSpacing: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
+  lineHeight: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
 };
 
 export const heading4 = {
   color: colors.white,
-  font: "Bellefair, serif",
-  fontSize: "32px",
+  fontFamily: "Bellefair, serif",
+  fontSize: {
+    mobile: "1rem",
+    tablet: "1rem",
+    desktop: "1rem",
+  },
+  letterSpacing: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
+  lineHeight: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
 };
 
 export const heading5 = {
-  characterSpace: "4.75px",
   color: colors.lightBlue,
-  font: "Barlow Condensed, sans-serif",
-  fontSize: "28px",
+  fontFamily: "Barlow Condensed, sans-serif",
+  fontSize: {
+    mobile: "16px",
+    tablet: "20px",
+    desktop: "28px",
+  },
+  letterSpacing: {
+    mobile: "2.7px",
+    tablet: "3.38px",
+    desktop: "4.72px",
+  },
+  lineHeight: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
 };
 
 export const subheading1 = {
-  characterSpace: "normal",
   color: colors.white,
-  font: "Bellefair, serif",
-  fontSize: "28px",
+  fontFamily: "Bellefair, serif",
+  fontSize: {
+    mobile: "1rem",
+    tablet: "1rem",
+    desktop: "1rem",
+  },
+  letterSpacing: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
+  lineHeight: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
 };
 
 export const subheading2 = {
-  characterSpace: "2.35px",
   color: colors.white,
-  font: "Barlow Condensed, sans-serif",
-  fontSize: "14px",
+  fontFamily: "Barlow Condensed, sans-serif",
+  fontSize: {
+    mobile: "1rem",
+    tablet: "1rem",
+    desktop: "1rem",
+  },
+  letterSpacing: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
+  lineHeight: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
 };
 
 export const navText = {
-  characterSpace: "2.7px",
   color: colors.white,
-  font: "Barlow Condensed, sans-serif",
-  fontSize: "16px",
+  fontFamily: "Barlow Condensed, sans-serif",
+  fontSize: {
+    mobile: "16px",
+    tablet: "14px",
+    desktop: "16px",
+  },
+  letterSpacing: {
+    mobile: "2.7px",
+    tablet: "2.36px",
+    desktop: "2.7px",
+  },
+  lineHeight: {
+    mobile: "1.5em",
+    tablet: "normal",
+    desktop: "normal",
+  },
 };
 
 export const bodyText = {
   color: colors.lightBlue,
-  font: "Barlow, sans-serif",
+  fontFamily: "Barlow, sans-serif",
+  fontSize: {
+    mobile: "15px",
+    tablet: "16px",
+    desktop: "18px",
+  },
+  letterSpacing: {
+    mobile: "normal",
+    tablet: "normal",
+    desktop: "normal",
+  },
+  lineHeight: {
+    mobile: "25px",
+    tablet: "28px",
+    desktop: "32px",
+  },
 };
