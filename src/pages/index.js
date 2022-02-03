@@ -32,7 +32,7 @@ const TextContainer = styled(Container)`
 `;
 
 const StyledContainer = styled(Container)`
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 25px;
   padding-left: 24px;
   padding-right: 24px;
@@ -45,8 +45,6 @@ const StyledContainer = styled(Container)`
     flex-direction: row;
     align-items: end;
     margin-top: 251px;
-    padding-left: 8vw;
-    padding-right: 8vw;
   }
 `;
 
@@ -98,7 +96,6 @@ const IndexPage = () => {
   return (
     <main>
       <GlobalStyles />
-      <title>Frontend Mentor | Space tourism website</title>
       <StyledContainer>
         <TextContainer>
           <StyledHeading level={5} as="p" data-h5>
