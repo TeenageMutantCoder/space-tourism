@@ -45,8 +45,8 @@ const StyledContainer = styled(Container)`
     flex-direction: row;
     align-items: end;
     margin-top: 251px;
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
 `;
 
