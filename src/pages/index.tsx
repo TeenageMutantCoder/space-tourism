@@ -25,13 +25,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const TextContainer = styled(Container)`
-  @media (min-width: 768px) {
-    width: 450px;
-  }
-`;
-
-const StyledContainer = styled(Container)`
+const OuterContainer = styled(Container)`
   justify-content: space-around;
   margin-top: 25px;
   padding-left: 24px;
@@ -45,6 +39,12 @@ const StyledContainer = styled(Container)`
     flex-direction: row;
     align-items: end;
     margin-top: 251px;
+  }
+`;
+
+const TextContainer = styled(Container)`
+  @media (min-width: 768px) {
+    width: 450px;
   }
 `;
 
@@ -96,7 +96,7 @@ const IndexPage = () => {
   return (
     <main>
       <GlobalStyles />
-      <StyledContainer>
+      <OuterContainer>
         <TextContainer>
           <StyledHeading level={5} as="p" data-h5>
             So, you want to travel to
@@ -112,7 +112,7 @@ const IndexPage = () => {
           </BodyText>
         </TextContainer>
         <CircleButton to="/destination">Explore</CircleButton>
-      </StyledContainer>
+      </OuterContainer>
     </main>
   );
 };
