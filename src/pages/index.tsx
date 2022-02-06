@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "gatsby";
 
@@ -111,7 +111,7 @@ const IndexPage = () => {
             world experience!
           </BodyText>
         </TextContainer>
-        <CircleButton to="/destination/moon">Explore</CircleButton>
+        <CircleButton to="/destination">Explore</CircleButton>
       </StyledContainer>
     </main>
   );

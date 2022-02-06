@@ -13,11 +13,12 @@ const Subheading = styled.p`
     styles[`subheading${props.level}`].fontFamily};
   font-size: ${(props: SubheadingProps) =>
     styles[`subheading${props.level}`].fontSize.mobile};
+  font-weight: normal;
   letter-spacing: ${(props: SubheadingProps) =>
     styles[`subheading${props.level}`].letterSpacing.mobile};
   line-height: ${(props: SubheadingProps) =>
     styles[`subheading${props.level}`].lineHeight.mobile};
-  text-transform: upppercase;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: ${(props: SubheadingProps) =>

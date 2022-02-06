@@ -42,6 +42,7 @@ const Nav = styled.nav`
   transition: right 0.3s ease-in-out, visibility 0.3s ease-in-out;
   visibility: hidden;
   width: 254px;
+  z-index: 1000;
 
   @media (min-width: 768px) {
     align-items: center;
@@ -106,13 +107,13 @@ function Header() {
         <NavText to="/">
           <b>00</b>Home
         </NavText>
-        <NavText to="/destination/moon">
+        <NavText to="/destination" partiallyActive={true}>
           <b>01</b>Destination
         </NavText>
-        <NavText to="/crew/commander">
+        <NavText to="/crew" partiallyActive={true}>
           <b>02</b>Crew
         </NavText>
-        <NavText to="/technology/launch-vehicle">
+        <NavText to="/technology" partiallyActive={true}>
           <b>03</b>Technology
         </NavText>
       </Nav>

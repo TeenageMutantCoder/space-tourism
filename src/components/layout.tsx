@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 
 import Header from "./header";
@@ -32,6 +33,9 @@ const GlobalStyles = createGlobalStyle`
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <Helmet>
+        <title>Frontend Mentor | Space tourism website</title>
+      </Helmet>
       <GlobalStyles />
       <Header />
       {children}

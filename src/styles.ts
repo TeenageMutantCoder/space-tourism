@@ -28,9 +28,9 @@ export const heading2 = {
   color: colors.white,
   fontFamily: "Bellefair, serif",
   fontSize: {
-    mobile: "1rem",
-    tablet: "1rem",
-    desktop: "1rem",
+    mobile: "56px",
+    tablet: "80px",
+    desktop: "100px",
   },
   letterSpacing: {
     mobile: "normal",
@@ -108,9 +108,9 @@ export const subheading1 = {
   color: colors.white,
   fontFamily: "Bellefair, serif",
   fontSize: {
-    mobile: "1rem",
-    tablet: "1rem",
-    desktop: "1rem",
+    mobile: "28px",
+    tablet: "28px",
+    desktop: "28px",
   },
   letterSpacing: {
     mobile: "normal",
@@ -125,17 +125,17 @@ export const subheading1 = {
 };
 
 export const subheading2 = {
-  color: colors.white,
+  color: colors.lightBlue,
   fontFamily: "Barlow Condensed, sans-serif",
   fontSize: {
-    mobile: "1rem",
-    tablet: "1rem",
-    desktop: "1rem",
+    mobile: "14px",
+    tablet: "14px",
+    desktop: "14px",
   },
   letterSpacing: {
-    mobile: "normal",
-    tablet: "normal",
-    desktop: "normal",
+    mobile: "2.36px",
+    tablet: "2.36px",
+    desktop: "2.36px",
   },
   lineHeight: {
     mobile: "normal",

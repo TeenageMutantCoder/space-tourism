@@ -4,6 +4,7 @@ module.exports = {
     description: `My solution to the "Space Tourism" Frontend Mentor challenge.`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
