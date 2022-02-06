@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
 
 `;
 
-const StyledContainer = styled(Container)`
+const OuterContainer = styled(Container)`
   margin-bottom: 58px;
   margin-top: 32px;
 
@@ -40,7 +40,7 @@ const StyledContainer = styled(Container)`
   }
 `;
 
-const StyledPicture = styled.picture`
+const Picture = styled.picture`
   img {
     width: 170px;
     height: 170px;
@@ -171,11 +171,11 @@ function Destination({ data, images }: Props) {
       <Heading pageHeading level={5} as="h1">
         <b>01</b>Pick Your Destination
       </Heading>
-      <StyledContainer>
-        <StyledPicture>
+      <OuterContainer>
+        <Picture>
           <source srcSet={images.webp} type="image/webp" />
           <img src={images.png} alt={`Picture of ${data.name}`} />
-        </StyledPicture>
+        </Picture>
         <TextContainer>
           <Nav>
             <StyledNavText to="/destination/moon">Moon</StyledNavText>
@@ -206,7 +206,7 @@ function Destination({ data, images }: Props) {
             </InfoContainer>
           </DistanceTravelContainer>
         </TextContainer>
-      </StyledContainer>
+      </OuterContainer>
     </div>
   );
 }
