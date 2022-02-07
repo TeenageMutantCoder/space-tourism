@@ -95,24 +95,26 @@ const CircleButton = styled(Link)`
 const IndexPage = () => {
   return (
     <main>
-      <GlobalStyles />
-      <OuterContainer>
-        <TextContainer>
-          <StyledHeading level={5} as="p" data-h5>
-            So, you want to travel to
-          </StyledHeading>
-          <StyledHeading level={1} as="h1" data-h1>
-            Space
-          </StyledHeading>
-          <BodyText>
-            Let's face it; if you want to go to space, you might as well
-            genuinely go to outer space and not hover kind of on the edge of it.
-            Well sit back, and relax because we'll give you a truly out of this
-            world experience!
-          </BodyText>
-        </TextContainer>
-        <CircleButton to="/destination">Explore</CircleButton>
-      </OuterContainer>
+      <div className="Index">
+        <GlobalStyles />
+        <OuterContainer>
+          <TextContainer>
+            <StyledHeading level={5} as="p" data-h5>
+              So, you want to travel to
+            </StyledHeading>
+            <StyledHeading level={1} as="h1" data-h1>
+              Space
+            </StyledHeading>
+            <BodyText>
+              Let's face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we'll give you a truly out of
+              this world experience!
+            </BodyText>
+          </TextContainer>
+          <CircleButton to="/destination">Explore</CircleButton>
+        </OuterContainer>
+      </div>
     </main>
   );
 };
