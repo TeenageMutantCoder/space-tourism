@@ -19,15 +19,23 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  html {
-    min-height: 100vh;
-  }
-
   body {
     background-color: ${styles.colors.dark};
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+  }
+
+  html {
+    min-height: 100vh;
+  }
+
+  html, body, #___gatsby, #___gatsby > div, main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body, #___gatsby, #___gatsby > div, main, main > * {
+    flex: 1;
   }
 `;
 
