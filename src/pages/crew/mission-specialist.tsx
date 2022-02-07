@@ -2,12 +2,21 @@ import React from "react";
 
 import Crew from "../../components/crew";
 
-function MissionSpecialist() {
+import data from "../../data.json";
+import webpImage from "../../images/crew/image-mark-shuttleworth.webp";
+import pngImage from "../../images/crew/image-mark-shuttleworth.png";
+
+const crewData = data.crew.filter(
+  (crewMember) => crewMember.role.toLowerCase() === "mission specialist"
+)[0];
+const images = { webp: webpImage, png: pngImage };
+
+function MissionSpecialistPage() {
   return (
     <main>
-      <Crew></Crew>
+      <Crew data={crewData} images={images} />
     </main>
   );
 }
 
-export default MissionSpecialist;
+export default MissionSpecialistPage;

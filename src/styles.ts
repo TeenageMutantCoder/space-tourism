@@ -48,9 +48,9 @@ export const heading3 = {
   color: colors.white,
   fontFamily: "Bellefair, serif",
   fontSize: {
-    mobile: "1rem",
-    tablet: "1rem",
-    desktop: "1rem",
+    mobile: "24px",
+    tablet: "40px",
+    desktop: "56px",
   },
   letterSpacing: {
     mobile: "normal",
@@ -68,9 +68,9 @@ export const heading4 = {
   color: colors.white,
   fontFamily: "Bellefair, serif",
   fontSize: {
-    mobile: "1rem",
-    tablet: "1rem",
-    desktop: "1rem",
+    mobile: "16px",
+    tablet: "24px",
+    desktop: "32px",
   },
   letterSpacing: {
     mobile: "normal",
