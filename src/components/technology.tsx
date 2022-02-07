@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
 
 function Technology() {
   return (
-    <div>
+    <div className="Technology">
       <GlobalStyles />
     </div>
   );

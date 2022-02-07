@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
 
 function Crew() {
   return (
-    <div>
+    <div className="Crew">
       <GlobalStyles />
     </div>
   );

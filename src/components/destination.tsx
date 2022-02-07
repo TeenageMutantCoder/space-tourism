@@ -166,7 +166,7 @@ interface Props {
 
 function Destination({ data, images }: Props) {
   return (
-    <div>
+    <div className="Destination">
       <GlobalStyles />
       <Heading pageHeading level={5} as="h1">
         <b>01</b>Pick Your Destination
