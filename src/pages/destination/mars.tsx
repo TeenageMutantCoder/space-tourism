@@ -11,7 +11,7 @@ const destinationData = data.destinations.filter(
 )[0];
 const images = { webp: webpImage, png: pngImage };
 
-function Mars() {
+function MarsPage() {
   return (
     <main>
       <Destination data={destinationData} images={images} />
@@ -19,4 +19,4 @@ function Mars() {
   );
 }
 
-export default Mars;
+export default MarsPage;

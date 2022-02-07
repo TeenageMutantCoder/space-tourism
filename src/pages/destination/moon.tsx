@@ -11,7 +11,7 @@ const destinationData = data.destinations.filter(
 )[0];
 const images = { webp: webpImage, png: pngImage };
 
-function Moon() {
+function MoonPage() {
   return (
     <main>
       <Destination data={destinationData} images={images} />
@@ -19,4 +19,4 @@ function Moon() {
   );
 }
 
-export default Moon;
+export default MoonPage;

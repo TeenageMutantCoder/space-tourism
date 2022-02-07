@@ -2,7 +2,7 @@ import React from "react";
 
 import Technology from "../../components/technology";
 
-function SpaceCapsule() {
+function SpaceCapsulePage() {
   return (
     <main>
       <Technology></Technology>
@@ -10,4 +10,4 @@ function SpaceCapsule() {
   );
 }
 
-export default SpaceCapsule;
+export default SpaceCapsulePage;

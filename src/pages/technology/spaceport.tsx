@@ -2,7 +2,7 @@ import React from "react";
 
 import Technology from "../../components/technology";
 
-function Spaceport() {
+function SpaceportPage() {
   return (
     <main>
       <Technology></Technology>
@@ -10,4 +10,4 @@ function Spaceport() {
   );
 }
 
-export default Spaceport;
+export default SpaceportPage;

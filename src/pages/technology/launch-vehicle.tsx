@@ -2,7 +2,7 @@ import React from "react";
 
 import Technology from "../../components/technology";
 
-function LaunchVehicle() {
+function LaunchVehiclePage() {
   return (
     <main>
       <Technology></Technology>
@@ -10,4 +10,4 @@ function LaunchVehicle() {
   );
 }
 
-export default LaunchVehicle;
+export default LaunchVehiclePage;
