@@ -104,16 +104,16 @@ function Header() {
       <Hamburger />
       <Spacer />
       <Nav>
-        <NavText to="/">
+        <NavText to="/" headerNav>
           <b>00</b>Home
         </NavText>
-        <NavText to="/destination" partiallyActive={true}>
+        <NavText to="/destination" partiallyActive={true} headerNav>
           <b>01</b>Destination
         </NavText>
-        <NavText to="/crew" partiallyActive={true}>
+        <NavText to="/crew" partiallyActive={true} headerNav>
           <b>02</b>Crew
         </NavText>
-        <NavText to="/technology" partiallyActive={true}>
+        <NavText to="/technology" partiallyActive={true} headerNav>
           <b>03</b>Technology
         </NavText>
       </Nav>

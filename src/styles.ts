@@ -148,13 +148,13 @@ export const navText = {
   color: colors.white,
   fontFamily: "Barlow Condensed, sans-serif",
   fontSize: {
-    mobile: "16px",
-    tablet: "14px",
+    mobile: "14px",
+    tablet: "16px",
     desktop: "16px",
   },
   letterSpacing: {
-    mobile: "2.7px",
-    tablet: "2.36px",
+    mobile: "2.36px",
+    tablet: "2.7px",
     desktop: "2.7px",
   },
   lineHeight: {
