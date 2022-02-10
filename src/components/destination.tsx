@@ -4,7 +4,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import BodyText from "./body-text";
 import Container from "./container";
 import Heading from "./heading";
-import NavText from "./nav-text";
+import NavText, { navHoverAnimation } from "./nav-text";
 import Subheading from "./subheading";
 
 import * as styles from "../styles";
@@ -87,6 +87,10 @@ const StyledNavText = styled(NavText)`
   margin-bottom: 0;
   padding-bottom: 12px;
   padding-left: 0;
+
+  media (min-width: 1024px) {
+    ${navHoverAnimation};
+  }
 
   &.active {
     color: ${styles.navText.color};

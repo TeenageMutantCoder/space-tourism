@@ -1,7 +1,29 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "gatsby";
 
 import * as styles from "../styles";
+
+const hoverAnimationLength = "0.2s";
+
+export const navHoverAnimation = css`
+  &:not(.active)::before {
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    transition: height ${hoverAnimationLength} ease-in-out,
+      visibility ${hoverAnimationLength};
+    width: 100%;
+    height: 0px;
+  }
+
+  &:hover::before {
+    height: 3px;
+    visibility: visible;
+  }
+`;
 
 type NavTextProps = { headerNav?: boolean };
 
@@ -34,6 +56,7 @@ const NavText = styled(Link).attrs({ activeClassName: "active" })`
     font-size: ${styles.navText.fontSize.desktop};
     letter-spacing: ${styles.navText.letterSpacing.desktop};
     line-height: ${styles.navText.lineHeight.desktop};
+    ${navHoverAnimation};
   }
 
   b {
