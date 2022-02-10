@@ -89,6 +89,11 @@ const CircleButton = styled(Link)`
     height: 274px;
     margin-top: 0;
     width: 274px;
+    transition: box-shadow 0.5s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 88px rgba(255, 255, 255, 0.1036);
+    }
   }
 `;
 
