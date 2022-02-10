@@ -115,7 +115,12 @@ const NumberedNavItems = styled(Link).attrs({ activeClassName: "active" })`
     font-family: ${styles.heading4.fontFamily};
     font-size: ${styles.heading4.fontSize.desktop};
     height: 80px;
+    transition: border-color 0.3s ease-in-out;
     width: 80px;
+
+    &:not(.active):hover {
+      border-color: ${styles.colors.white};
+    }
   }
 
   &.active {
