@@ -118,7 +118,12 @@ const CircleLink = styled(Link).attrs({ activeClassName: "active" })`
 
   @media (min-width: 1024px) {
     height: 15px;
+    transition: background-color 0.3s ease-in-out;
     width: 15px;
+
+    &:not(.active):hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   &.active {
