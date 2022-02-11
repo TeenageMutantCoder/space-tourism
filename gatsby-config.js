@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Space Tourism`,
     description: `My solution to the "Space Tourism" Frontend Mentor challenge.`,
+    author: ``,
+    siteUrl: `https://sw-space-tourism.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
