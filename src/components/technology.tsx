@@ -92,7 +92,10 @@ const Nav = styled.nav`
   }
 `;
 
-const NumberedNavItems = styled(Link).attrs({ activeClassName: "active" })`
+const NumberedNavItems = styled(Link).attrs({
+  activeClassName: "active",
+  partiallyActive: true,
+})`
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;

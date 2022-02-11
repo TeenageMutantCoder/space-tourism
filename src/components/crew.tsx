@@ -110,7 +110,10 @@ const Nav = styled.nav`
   }
 `;
 
-const CircleLink = styled(Link).attrs({ activeClassName: "active" })`
+const CircleLink = styled(Link).attrs({
+  activeClassName: "active",
+  partiallyActive: true,
+})`
   background-color: rgba(255, 255, 255, 0.1744);
   border-radius: 50%;
   display: block;

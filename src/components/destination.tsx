@@ -81,7 +81,7 @@ const Nav = styled.nav`
   }
 `;
 
-const StyledNavText = styled(NavText)`
+const StyledNavText = styled(NavText).attrs({ partiallyActive: true })`
   color: ${styles.colors.lightBlue};
   line-height: initial;
   margin-bottom: 0;
