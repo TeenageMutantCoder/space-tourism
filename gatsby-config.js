@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     "gatsby-plugin-robots-txt",
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
