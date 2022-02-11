@@ -6,6 +6,7 @@ import BodyText from "./body-text";
 import Container from "./container";
 import Heading from "./heading";
 import NavText from "./nav-text";
+import SrOnlyText from "./sr-only-text";
 
 import * as styles from "../styles";
 import mobileBackground from "../images/technology/background-technology-mobile.jpg";
@@ -191,11 +192,13 @@ function Technology({ data, images }: Props) {
         <InnerContainer>
           <Nav>
             <NumberedNavItems to="/technology/launch-vehicle">
-              1
+              1 <SrOnlyText>Launch Vehicle</SrOnlyText>
             </NumberedNavItems>
-            <NumberedNavItems to="/technology/spaceport">2</NumberedNavItems>
+            <NumberedNavItems to="/technology/spaceport">
+              2 <SrOnlyText>Spaceport</SrOnlyText>
+            </NumberedNavItems>
             <NumberedNavItems to="/technology/space-capsule">
-              3
+              3<SrOnlyText>Space Capsule</SrOnlyText>
             </NumberedNavItems>
           </Nav>
           <Container>

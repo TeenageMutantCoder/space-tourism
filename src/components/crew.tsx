@@ -5,6 +5,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import BodyText from "./body-text";
 import Container from "./container";
 import Heading from "./heading";
+import SrOnlyText from "./sr-only-text";
 
 import * as styles from "../styles";
 import mobileBackground from "../images/crew/background-crew-mobile.jpg";
@@ -187,10 +188,18 @@ function Crew({ data, images }: Props) {
         </Picture>
         <InnerContainer>
           <Nav>
-            <CircleLink to="/crew/commander" />
-            <CircleLink to="/crew/mission-specialist" />
-            <CircleLink to="/crew/pilot" />
-            <CircleLink to="/crew/flight-engineer" />
+            <CircleLink to="/crew/commander">
+              <SrOnlyText>Commander</SrOnlyText>
+            </CircleLink>
+            <CircleLink to="/crew/mission-specialist">
+              <SrOnlyText>Mission Specialist</SrOnlyText>
+            </CircleLink>
+            <CircleLink to="/crew/pilot">
+              <SrOnlyText>Pilot</SrOnlyText>
+            </CircleLink>
+            <CircleLink to="/crew/flight-engineer">
+              <SrOnlyText>Flight Engineer</SrOnlyText>
+            </CircleLink>
           </Nav>
           <TextContainer>
             <Heading level={4} as="h2">
